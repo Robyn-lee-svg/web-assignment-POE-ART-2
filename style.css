@@ -1,0 +1,186 @@
+/* basic CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        /* overall page style*/
+        body{
+            font-family: poppins sans-serif;
+            margin:0;
+            background-color:beige;
+            color:black;
+        }
+        
+        header{
+            background-color: lightpink;
+            padding: 1rem;
+            position:sticky;
+            top:0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        
+        
+        nav a{
+            
+            margin-right: 20px;
+            text-decoration: underline;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            
+                
+            
+        }
+
+        nav a hover{
+                text-decoration: wavy;
+            
+        }
+
+        .logo{
+            height:3rem;
+        }
+        
+
+        main{
+            padding:20px;
+            background-color: beige;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section{
+            padding: 2rem;
+            margin: 1rem;
+            background: thistle;
+            border: 2px solid lightpink;
+            border-radius: 15px;
+
+        }
+
+        h1,h2{
+            font-size: 2.5rem;
+            color: black;
+            margin-top: 1.25rem;
+
+
+        }
+
+        .shop, .previous .orders{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 1rem;
+        }
+
+        .image-row {
+            display:flex ;
+            gap: 10px;
+            flex-wrap: wrap;
+
+        }
+
+        .image-row img{
+            width: 24%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid lightpink;
+            background-color: black;
+        }
+
+        .hero-img{
+            width:100%;
+            border-radius: 0.625rem;
+            border: 0.125rem solid black;
+        }
+
+        
+        
+        form{
+            display: grid;
+            gap:1rem;
+        }
+
+        input.textarea{
+            padding: 0.7rem;
+            border: none;
+            border-radius: 10px;
+        }
+
+        button{
+            padding:0.7rem;
+            border: none;
+            border-radius: 10px;
+            background: #8D6E63;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        footer{
+            text-align:center;
+            padding: 1rem;
+            background: lightpink;
+            margin-top: 2rem;
+        }
+
+         /* cellphone screen adjustments*/
+        @media (maxwidth: 700px){
+            body{
+                background-color: beige;
+            
+            }
+
+            h1,h2{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            section{
+                padding: 1rem;
+                margin: 0.5rem;
+            }
+            /*helps display vertical menu on cellphones*/
+            nav{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav a{
+                margin:0.5rem 0;
+                text-align: center;
+            }
+
+            .shop, .previous, .orders{
+                grid-template-columns: 1fr;
+            }
+
+            img{
+                border-radius: 6px;
+            }
+        }
+        /*helps with website adjustement on tablets*/
+        @media(min-width:769px) and (max-width:1024px){
+            body{
+                background-color: beige;
+            }
+             h1,h2{
+                font-size: 32px;
+             }
+
+             .shop, .previous, .orders{
+                grid-template-columns: repeat(2,1fr);
+             }
+        }
+    
+
+    
