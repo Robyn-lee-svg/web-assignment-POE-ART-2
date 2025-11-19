@@ -72,3 +72,14 @@ Charly's bakery, 2025. Cakes[image]. Available at:<https://charlysbakery.co.za/w
 Charly's bakery, 2025.LOGO[image]. Available at:<https://tse1.mm.bing.net/th/id/OIP.ZLMKSwrI5VjznGvvN7XSRwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3> [Accessed 20 September 2025]
 
 OpenAI, 2025. ChatGPT (GPT-5) [AI language Model].Personal Use.
+
+
+#POE PART 3.
+- NO FEEDBACK WAS GIVEN FOR PART 2
+- Some parts of the project was developed and fixed with the assistance of OpenAI's ChatGPT for eg:
+  ERROR checking and color schemeing to figure out which colors would best suit the website.
+
+#REFRENCING.
+All research that was done to better understand Tabs, Modals and Accordions:[ can be found at](https://medium.com/@coby09/building-seamless-navigation-in-expo-router-tabs-modals-and-stacks-2df1a5522321).
+
+
