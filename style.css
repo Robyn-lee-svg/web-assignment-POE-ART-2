@@ -124,6 +124,107 @@
             cursor: pointer;
         }
 
+
+
+         details{
+            background:white;
+            border: 2px solid lightpink;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        summary{
+            font-weight: bold;
+            cursor: pointer;
+            color: lightcoral;
+            font-size: 1.1rem;
+        }
+
+        details[open] summary{
+            color:lightpink;
+        }
+
+        details p{
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        footer{
+            text-align:center;
+            padding: 1rem;
+            background: lightpink;
+            margin-top: 2rem;
+        }
+
+        /* TAB STYLING*/
+        .tabs{
+            display: flex;
+            border-bottom: 10px solid lightpink;
+            margin-bottom: 1.5rem;
+        }
+        .tab-button{
+            padding: 0.6rem 1.2rem;
+            background: lightpink;
+            border:2px solid lightcoral;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #A84D63;
+            transition: 0.3s ease;
+        }
+
+        .tab-button:hover{
+            background: #E26D8A;
+        }
+
+        .tab-button.active{
+            background:#E26D8A;
+            color: white;
+        }
+
+        .tab-content{
+            display: none;
+
+        }
+
+        .tab-content.active{
+            display: block;
+
+        }
+
+        /* MODAL STYLING*/
+        .modal{
+            display: none;
+            position: fixed;
+            inset:0;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content{
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 85%;
+            max-width: 350px;
+            text-align: center;
+            border: 3px solid lightpink;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .close-button{
+            float:right;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #E26D8A;
+        }
+            
+
+            
+    
         footer{
             text-align:center;
             padding: 1rem;
@@ -184,3 +285,4 @@
     
 
     
+
