@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width" initial-scale="1.0">
         <title>ENQUERY</title>
-        <link rel="stylesheet" href="css/style.css">
+         <meta name="description" content="Enquery page for Charly's Bakery">
+        <link rel="stylesheet" href="style.css">
 
     </head>
     <body>
@@ -39,27 +40,41 @@
         <main>
             <section id="ENQUERY">
                 
-                <form>
+                <form id="enquiry form">
                     <label for ="name">NAME:</label>
-                    <input type="text" id="name"><br><br>
+                    <input type="text" placeholder="Your name" required><br><br>
 
                     <label for ="surname">SURNAME:</label>
-                    <input type="text" id="surname"><br><br>
+                    <input type="text" placeholder="YOUR SURNAME" required><br><br>
 
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="text" id="phone number"><br><br>
+                    <input type="text" placeholder="YOUR PHONE NUMBER" required><br><br>
 
                     <label for ="email">EMAIL</label>
-                    <input type="email" id="email"><br><br>
+                    <input type="email" placeholder="YOUR EMAIL" required><br><br>
+                    <select required>
+                        <option value="">SELECT ENQUIRY TYPE</option>
+                        <option value="Pricing">PRICING</option>
+                        <option value="Custom Orders">CUSTOM ORDERS</option>
+                        <option value="Availibility">AVAILIBILTY</option>
+                    </select>
 
-                    <label for="equering about?">ENQUERING ABOUT?</label>
-                    <input type="text" id="ENQUERY"><br><br>
+                    <textarea placeholder="YOUR MESSAGE" required></textarea><br><br>
+
+                
 
                      <button type="submit">Send</button>
 
 
                 </form>
             </section>
+
+            <script>
+                document.getElementById("enquiry form").addEventListener("SUBMIT" , function(events) {
+                    e.preventDefault();
+                    alert("THANK YOU! WE WILL GET BACK TO YOU AS SOON AS POSSIBLE");
+                })
+            </script>
         </main>
         
         <footer>
@@ -69,3 +84,4 @@
 
     </body>
 </html>
+                    
